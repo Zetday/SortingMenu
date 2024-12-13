@@ -40,6 +40,19 @@ void tampil_data(int data[]){
     getch();
 }
 
+void sorting_asc(int data[]){
+  for(int i = 1; i < n; i++){
+    for(int j = n-1; j >= i; j--){
+      if(data[j]<data[j-1]) tukar(&data[j], &data[j-1]);
+    }
+  }
+  cout<<" Data yang telah diurutkan secara ascending: "<<endl;
+    for(int i=0; i<n; i++){
+        cout<<data[i]<<" ";
+    }
+    getch();
+}
+
 int main() {
 int data[100];
 char pl;
@@ -58,7 +71,7 @@ do
     /* code */ 
     break;  
    case '3':
-    
+    sorting_asc(data);
     /* code */
     break;  
    case '4':
