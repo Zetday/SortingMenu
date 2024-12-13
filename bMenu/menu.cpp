@@ -53,6 +53,19 @@ void sorting_asc(int data[]){
     getch();
 }
 
+void sorting_dsc(int data[]){
+  for(int i = 1; i < n; i++){
+    for(int j = n-1; j >= i; j--){
+      if(data[j]>data[j-1]) tukar(&data[j], &data[j-1]);
+    }
+  }
+  cout<<" Data yang telah diurutkan secara descending: "<<endl;
+    for(int i=0; i<n; i++){
+        cout<<data[i]<<" ";
+    }
+    getch();
+}
+
 int main() {
 int data[100];
 char pl;
@@ -75,7 +88,7 @@ do
     /* code */
     break;  
    case '4':
-    
+    sorting_dsc(data);
     /* code */
     break;  
   case '5':
