@@ -15,18 +15,21 @@ cout<<"Masukan angka :";
 
 }
 
-void mPertama(string pesan){
-system("cls");
-cout<<"hallo saya menu "<<pesan;
-getch();
-}
-
 void tukar(int *a, int *b){
   int t = *a;
   *a = *b;
   *b = t;
 }
 
+void input_data(int data[]){
+  system("cls");
+    cout<<"Masukan jumlah data: ";
+    cin>>n;
+    for(int i=0; i<n; i++){
+        cout<<"Masukan data ke-"<<i+1<<": ";
+        cin>>data[i];
+    }
+}
 
 int main() {
 int data[100];
@@ -39,18 +42,18 @@ do
   {
    case '1':
     /* code */
-    mPertama("pertama");
+    input_data(data);
     break;
    case '2':
-    mPertama("ke- dua");
+    
     /* code */ 
     break;  
    case '3':
-    mPertama("ke- tiga");
+    
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    
     /* code */
     break;  
   case '5':
