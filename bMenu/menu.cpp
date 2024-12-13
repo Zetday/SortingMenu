@@ -31,6 +31,15 @@ void input_data(int data[]){
     }
 }
 
+void tampil_data(int data[]){
+  system("cls");
+    cout<<"Data yang telah dimasukan: "<<endl;
+    for(int i=0; i<n; i++){
+        cout<<data[i]<<" ";
+    }
+    getch();
+}
+
 int main() {
 int data[100];
 char pl;
@@ -45,7 +54,7 @@ do
     input_data(data);
     break;
    case '2':
-    
+    tampil_data(data);
     /* code */ 
     break;  
    case '3':
