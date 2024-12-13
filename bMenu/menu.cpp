@@ -21,6 +21,12 @@ cout<<"hallo saya menu "<<pesan;
 getch();
 }
 
+void tukar(int *a, int *b){
+  int t = *a;
+  *a = *b;
+  *b = t;
+}
+
 
 int main() {
 int data[100];
